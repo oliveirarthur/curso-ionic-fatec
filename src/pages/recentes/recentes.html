@@ -1,0 +1,26 @@
+<ion-content padding>
+  <ion-searchbar></ion-searchbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        filme!
+      </ion-card-title>
+      <img src="http://i.imgur.com/ZYPjzTk.gif">
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear>
+            <ion-icon name="star"></ion-icon>
+            <div>Favorito</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear (click)="goToDetalhes()">
+            <ion-icon name="search"></ion-icon>
+            <div>Detalhes</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
