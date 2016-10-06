@@ -5,16 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Detalhes do filme</ion-title>
+    <ion-title>{{obj.title || obj.name}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  {{movie.title}}
-  {{movie.overview}}
-  {{movie.title}}
+  <div>
+    {{obj.overview}}
+  </div>
+    {{obj.poster_url}}
 </ion-content>

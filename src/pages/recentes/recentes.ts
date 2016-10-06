@@ -31,7 +31,7 @@ export class RecentesPage {
 
   goToDetalhes(movie) {
     this.navCtrl.push(DetalhesPage,{
-      'movie': movie
+      obj: movie
     });//push coloca a classe no topo da pilha, e pop retira
   }
 }

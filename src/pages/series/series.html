@@ -3,14 +3,14 @@
   <ion-searchbar [(ngModel)]="query" (ionInput)="search()">
 
   </ion-searchbar>
-  <ion-card *ngFor="let movie of movies"><!-- diretiva do angular -->
+  <ion-card *ngFor="let serie of series"><!-- diretiva do angular -->
     <ion-card-content>
      <ion-card-title>
-       {{movie.title}}
+       {{serie.title}}
      </ion-card-title> 
       <ion-row>
         <ion-col>
-        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}"/>
+        <img src="https://image.tmdb.org/t/p/w500{{serie.poster_path}}"/>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -23,7 +23,7 @@
           </button>
         </ion-col>
         <ion-col>
-          <button ion-button clear icon-left (click)="goToDetalhes(movie);">
+          <button ion-button clear icon-left (click)="goToDetalhes(serie);">
             <ion-icon name="search"></ion-icon>
             <div>
               Detalhes

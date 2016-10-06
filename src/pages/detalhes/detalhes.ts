@@ -13,14 +13,13 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DetalhesPage {
 
-  private movie:any;
+  private obj:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.movie = navParams.data['movie'];
+    this.obj = navParams.data['obj'];
   }
 
   ionViewDidLoad() {
-    console.log('Hello Detalhes Page');
   }
 
 }
